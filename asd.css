@@ -1,0 +1,299 @@
+* {
+  font-size: 25px;
+  color: cornsilk;
+  /* margin: 0; */
+  text-align: center;
+  
+}
+footer,
+header {
+  background-color: rgb(87, 69, 69);
+  padding: 30px 0;
+  margin:auto;
+}
+aside {
+  background-color: rgb(141, 135, 135);
+  width: 30%;
+  height: 1200px;
+}
+main {
+  background-color: #777777;
+  width: 70%;
+  height: 1200px;
+}
+aside,
+main {
+  float: left;
+}
+h2 {
+  color: deeppink;
+  background-color: deepskyblue;
+  border: 5px black solid;
+  border-radius: 6px;
+  padding: 30px;
+  margin-top: 100px;
+}
+
+
+
+img {
+  padding: auto;
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  border: 5px rgb(143, 126, 126) solid;
+  border-left: rgb(103, 103, 112) 5px solid;
+  opacity: 0.8;
+  border-radius: inherit;
+}
+.asd {
+  background-color: rgb(17, 1, 1);
+  position: relative;
+  bottom: 100px;
+  opacity: 0.7;
+  flex-grow: initial;
+  font-style: oblique;
+  font-weight: 700;
+  box-shadow: lightcoral navy lightgray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  text-transform: lowercase;
+  border-radius: 50px;
+}
+.ol {
+  color: blue;
+  background-color: burlywood;
+  display: block;
+}
+.ol:hover{
+color: darkblue; 
+background-color: darkgreen;
+
+}
+footer {
+  margin-top: 30px;
+/* margin-bottom: 500px; */
+/* display: flex; */
+}
+* {
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: red;
+  cursor: progress;
+  background-color: cadetblue;
+}
+
+a:hover {
+  color: blue;
+   background-color: chartreuse;
+}
+footer{
+clear: both;
+
+}
+.spin{
+  height: 50px;
+  width: 50px;
+  margin: 50px auto;
+  border: 5px solid #FA3664;
+  border-left-color: transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: relative;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  }
+  .spin::before{
+  height: 65px;
+  width: 65px;
+  right: -12.5px;
+  bottom: -12.5px;
+  position: absolute;
+  content: "";
+  border: 5px solid #0075FF;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  }
+  .spin::after{
+  height: 80px;
+  width: 80px;
+  right: -20px;
+  bottom: -20px;
+  content: "";
+  border: 5px solid #FCB400;
+  position: absolute;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  }
+  .spin:hover{ animation:none; -webkit-animation:none;}
+  /* ----------------task2------------------------------ */
+  .hovere{
+      height: 50px;
+      width: 50px;
+  margin: 50px auto;
+  border: 5px solid #0075FF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: relative;
+  animation-name: spin;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  animation-play-state: paused;
+  }
+  .hovere:hover{
+  animation-play-state: running;
+  } 
+  .hovere:before{
+  height: 65px;
+  width: 65px;
+  right: -12.5px;
+  bottom: -12.5px;
+  position: absolute;
+  content: "";
+  border: 5px solid #FCB400;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation-name: spin;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  animation-play-state: paused;
+  }
+  .hovere:hover::before{
+  animation-play-state: running;
+  }
+  .hovere::after{
+  height: 80px;
+  width: 80px;
+  right: -20px;
+  bottom: -20px;
+  content: "";
+  border: 5px solid #000;
+  position: absolute;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+  animation-play-state: paused;
+  
+}
+  .hovere:hover::after{
+    animation-play-state: running;
+  }
+  @keyframes spin{
+    100%{
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  }
+}
+/* ----------------task3------------------------------ */
+span{
+  background-color: #D8D8FF;
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+  border: 5px solid black;
+  border-left-color: transparent;
+  margin: 50px auto;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+}
+img:hover{
+margin: 50px 0px 0px 5px;
+border-radius: 30px;
+border-color: #FA3664;
+
+
+
+}
+.zxc{
+width: 300px;
+height: 50px;
+background-color: aquamarine;
+ border: 1px solid blue;
+ padding: 5px;
+ margin-top: 5px;
+ margin-left: 50px;
+ padding: 10px;
+color: rgb(0, 0, 0);
+
+
+}
+.asdf{
+text-align: center;
+padding-top: 10px;
+
+}
+.b{
+background-color: azure;
+border: black 6px solid;
+color: cornflowerblue;
+
+
+}
+@media (max-width: 768px) {
+  aside,
+  .ol,
+  header,
+  footer,
+  main,
+  .img{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  header {
+    padding-bottom: 20px;}
+    aside,
+    main,
+    footer,{ display: block;
+      width: 100%;}
+      .c{
+        display: block;
+        width: 100%;
+        margin: 0;
+
+
+      }
